@@ -3,19 +3,26 @@ function doMath() {
 	var znak = prompt("Введите математическое действие");
 	var y = +prompt("Введите второе число");
 
-	if (znak==="+"){
+	switch(znak){
+	case "+":
 		return alert(x + y);
-	} else if(znak==="-") {
-			return alert(x - y);
-		} else if(znak==="*") {
-			return alert(x * y);
-			}	else if(znak==="/") {
-				return alert(x / y);
-				}	else if(znak==="%") {
-					return alert(x % y);
-					} else return alert("Неверное значение.");
+		break;
+	case "-":
+		return alert(x - y);
+		break;
+	case "*":
+		return alert(x * y);
+		break;
+	case "/":
+		return alert(x / y);
+		break;
+	case "%":
+		return alert(x % y);
+		break;
+	default:
+		return alert("Неверное значение.");
+	}
+
 }
 
 doMath();
-
-
