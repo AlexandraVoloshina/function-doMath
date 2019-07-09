@@ -5,22 +5,22 @@ var y = +prompt("Введите второе число");
 function doMath(x, znak, y) {
 	switch(znak){
 	case "+":
-		return alert(x + y);
+		alert(x + y);
 		break;
 	case "-":
-		return alert(x - y);
+		alert(x - y);
 		break;
 	case "*":
-		return alert(x * y);
+		alert(x * y);
 		break;
 	case "/":
-		return alert(x / y);
+		alert(x / y);
 		break;
 	case "%":
-		return alert(x % y);
+		alert(x % y);
 		break;
 	default:
-		return alert("Неверное значение.");
+		alert("Неверное значение.");
 	}
 
 }
